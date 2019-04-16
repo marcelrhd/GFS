@@ -10,6 +10,7 @@
     
     if(gewicht > 0 && groesse > 0){  
     var finalBmi = gewicht/(groesse/100*groesse/100)
+    console.log(finalBmi)
     document.bmiForm.bmi.value = finalBmi
     if(finalBmi < 18.5){
     document.bmiForm.meaning.value = "Sie sind zu dünn."
@@ -39,7 +40,7 @@
       
       <input type="button" value="BMI Berechnen" onClick="calculateBmi()"><br />
       
-      Ihr BMI: <outputput type="text" id="bmi" size="10"><br />
+      Ihr BMI: <output type="text" id="bmi" size="10"><br />
       Das Bedeutet: <output type="text" id="meaning" size="25"><br />
       
       <input type="reset" value="Resetten" />
